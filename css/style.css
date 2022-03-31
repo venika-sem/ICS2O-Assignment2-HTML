@@ -1,0 +1,42 @@
+/* Created by: Venika Sem
+* Created on: Mar 2022
+* This file contains the CSS for index.html
+*/
+
+body {
+  background-color: #ffede5;
+}
+
+.mdl-layout__content {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+p {
+  color: #005980;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: #005980;
+  font: 22pt "Times New Roman", Times, serif;
+  font-weight: bold;
+  line-height: 16pt;
+}
+
+h2 {
+  color: #005980;
+  font: 20pt "Times New Roman", Times, serif;
+  font-weight: bold;
+  line-height: 16pt
+}
+
+h3 {
+  color: #cc0000;
+  font: 19pt "Times New Roman", Times, serif;
+  font-weight: bold;
+  line-height: 16pt;
+}

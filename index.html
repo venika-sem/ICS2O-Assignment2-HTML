@@ -1,23 +1,63 @@
 <!DOCTYPE html>
-<!-- ICS2O-UnitX-YY-HTML -->
+<!-- ICS2O-Assignment2-HTML -->
 <html lang="en-ca">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="XXX">
-    <meta name="keywords" content="mths, ics2o">
-    <meta name="author" content="Venika Sem">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/iconMy first webpage, with JavaScript?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <title>XXX</title>
+    <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Area of square" />
+    <meta name="keywords" content="mths, ics2o" />
+    <meta name="author" content="Venika Sem" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-red.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Area of square</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-
+    <script src="./js/script.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Find the Area of Square</span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="content">
+           <h1>How to find the Area of a Square?</h1>
+         <div>
+              <img src="img/squarjpeg.jpg" alt="square" width="10%" height="auto" />
+            <th>
+              <h2>Area formula</h2>
+              <h3>A = s²</h3>
+            </th>
+          </tr>
+        </table>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <p>Side value</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="side-value">
+            <label class="mdl-textfield__label" for="side-value">type here ...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <!-- Raised button with ripple -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+onclick="calculate()">
+          Calculate
+        </button>
+        <br />
+        <p>
+          <div id="answers">
+            <div id="area"></div>
+          </div>
+        </p>
+      </main>
+    </div>
   </body>
 </html>
-        
+          
